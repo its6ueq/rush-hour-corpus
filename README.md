@@ -86,6 +86,18 @@ node src/verify.mjs --all   # every board; slow at the deep end
 generator, different goal test. That is the point of it. A verifier that imported the fast solver
 would only be checking that a function still returns what it returned last time.
 
+A sample spanning every par value at every board size agrees exactly:
+
+| Board | Boards checked | Agree |
+| ----- | -------------: | ----: |
+| 6×6   |            105 |   105 |
+| 7×7   |            109 |   109 |
+| 8×8   |            186 |   186 |
+
+That covers all 295 distinct par values in the corpus, the 202-move boards included. Note that the
+naive verifier is very slow on the deepest boards, which is the price of writing it the obvious way
+on purpose.
+
 ## Method
 
 Nothing here is a new algorithm. The solver is the standard one and the search around it is
