@@ -1,0 +1,5 @@
+node_modules/
+
+# Miner checkpoints. Hundreds of megabytes, carry stored solutions and internal bookkeeping,
+# and are entirely reproducible. src/export-corpus.mjs turns them into data/ which is tracked.
+data/checkpoints/

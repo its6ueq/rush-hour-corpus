@@ -1,0 +1,34 @@
+{
+  "name": "rush-hour-corpus",
+  "version": "1.0.0",
+  "description": "55,404 Rush Hour puzzles with proven optimal move counts, on 6x6, 7x7 and 8x8 boards, from 4 to 202 moves - plus the miners that produced them and an independent verifier.",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "verify": "node src/verify.mjs",
+    "verify:all": "node src/verify.mjs --all",
+    "export": "node src/export-corpus.mjs"
+  },
+  "keywords": [
+    "rush-hour",
+    "sliding-block-puzzle",
+    "puzzle",
+    "dataset",
+    "corpus",
+    "solver",
+    "search",
+    "pspace",
+    "benchmark",
+    "level-generation"
+  ],
+  "files": [
+    "src",
+    "data",
+    "docs",
+    "README.md",
+    "LICENSE"
+  ]
+}
